@@ -2,10 +2,10 @@ import { Link, NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark glass-navbar fixed-top">
       <div className="container">
         <Link className="navbar-brand fw-bold" to="/">
-          Candiclie Business Hotel
+          Candiclie Business Hotels
         </Link>
 
         <button
@@ -13,9 +13,6 @@ function Navbar() {
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#hotelNavbar"
-          aria-controls="hotelNavbar"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -41,24 +38,19 @@ function Navbar() {
             </li>
           </ul>
 
-        
+          
           <form className="d-flex ms-lg-3 mt-3 mt-lg-0">
-            <div className="input-group">
-              <input
-                className="form-control form-control-sm"
-                type="search"
-                placeholder="Search rooms"
-                aria-label="Search"
-              />
-              <button className="btn btn-outline-light btn-sm" type="submit">
-                <i className="bi bi-search"></i>
-              </button>
-            </div>
+            <input
+              className="form-control form-control-sm glass-input"
+              type="search"
+              placeholder="Search rooms"
+            />
           </form>
 
+          
           <Link
             to="/book"
-            className="btn btn-success btn-sm ms-lg-3 mt-3 mt-lg-0"
+            className="btn btn-success btn-sm ms-lg-3 mt-3 mt-lg-0 fw-semibold"
           >
             Book Now
           </Link>

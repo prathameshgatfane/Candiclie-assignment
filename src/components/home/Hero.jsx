@@ -22,7 +22,7 @@ function Hero() {
                       Luxury, comfort, and productivity at Candiclie Business Hotel.
                       Designed for professionals and corporate stays.
                     </p>
-                    <Link to="/rooms" className="btn btn-success btn-lg">
+                    <Link to="/rooms" className="btn btn-warning btn-lg">
                       View Rooms
                     </Link>
                   </div>

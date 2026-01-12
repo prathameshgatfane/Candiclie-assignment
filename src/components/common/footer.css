@@ -1,0 +1,105 @@
+
+
+footer {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  font-size: 15px;
+}
+
+footer h5 {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+}
+
+
+footer p {
+  color: #d1d5db;
+  line-height: 1.7;
+}
+
+
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  color: #d1d5db;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+
+footer ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background: #00c6ff;
+  transition: width 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: #ffffff;
+}
+
+footer ul li a:hover::after {
+  width: 100%;
+}
+
+
+footer strong {
+  color: #ffffff;
+}
+
+
+footer .d-flex a {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.35s ease;
+}
+
+/* icon hover animation */
+footer .d-flex a:hover {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 198, 255, 0.5);
+}
+
+footer .d-flex i {
+  font-size: 18px;
+}
+
+
+
+footer hr {
+  opacity: 0.3;
+}
+
+
+
+footer .text-center {
+  color: #cbd5e1;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+}
+
+
+
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+  }
+
+  footer .d-flex {
+    justify-content: center;
+  }
+}
